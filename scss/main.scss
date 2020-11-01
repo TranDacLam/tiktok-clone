@@ -1,0 +1,18 @@
+@import './variables.scss';
+@import './minxins.scss';
+@import './fonts.scss';
+@import './default.scss';
+@import './utilities.scss';
+
+@import './getstart-page.scss';
+
+@import './responsive.scss';
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+      pointer-events: none;
+  }
+  
