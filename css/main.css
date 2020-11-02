@@ -9413,6 +9413,34 @@ header .ui.pointing.dropdown > .menu {
 .getstart-form .vi-form-item__content {
   margin-bottom: 32px; }
 
+#register .password .icon svg:nth-child(2), #register .confirm-password .icon svg:nth-child(2) {
+  display: none; }
+
+#register .password .icon.active svg:nth-child(1), #register .confirm-password .icon.active svg:nth-child(1) {
+  display: none; }
+
+#register .password .icon.active svg:nth-child(2), #register .confirm-password .icon.active svg:nth-child(2) {
+  display: block; }
+
+#register .account-center-area-select .menu {
+  width: 360px !important;
+  left: -15px;
+  top: 28px !important; }
+  #register .account-center-area-select .menu > .input {
+    width: calc(100% - 30px);
+    top: 0px; }
+
+#register .account-center-area-select .dropdown {
+  margin-top: 6px; }
+  #register .account-center-area-select .dropdown > .menu {
+    padding-top: 70px; }
+  #register .account-center-area-select .dropdown .area-code-value span {
+    font-size: 14px; }
+  #register .account-center-area-select .dropdown .area-code-value span:nth-child(3) {
+    display: none; }
+  #register .account-center-area-select .dropdown .area-suffix {
+    right: 2px; }
+
 /* Extra small devices (phones, 600px and down) */
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* Medium devices (landscape tablets, 768px and up) */

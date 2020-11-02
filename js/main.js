@@ -43,5 +43,54 @@ $(document).ready(function() {
 		on: 'hover'
 	});
 
-	$('#form .dropdown').dropdown(	);
+	$('.form-set-country .dropdown').dropdown({
+		fullTextSearch: true
+	});
+	$('#register .dropdown').dropdown({
+		fullTextSearch: true
+	});
+
+	$('.form-set-country button').on('click', function() {
+		$('.form-set-country').css({'display': 'none'});
+		$('#register').css({'display': 'block'});
+		$('#form .prev-btn').css({'display': 'block'});
+	});
+
+	$('#form .prev-btn').on('click', function(){
+		$('.form-set-country').css({'display': 'block'});
+		$('#register').css({'display': 'none'});
+		$('#form .prev-btn').css({'display': 'none'});
+	})
+
+	$('#register .multiple-inputs--1 .active-account').on('click', function(){
+		$('.multiple-inputs--1').css({'display': 'none'});
+		$('.multiple-inputs--2').css({'display': 'block'});
+	})
+	$('#register .multiple-inputs--2 .active-account').on('click', function(){
+		$('.multiple-inputs--2').css({'display': 'none'});
+		$('.multiple-inputs--1').css({'display': 'block'});
+	})
+
+
+	$('#register .password .icon').on('click', function(){
+		if($(this).hasClass('active')){
+			$(this).removeClass('active')
+			$('#register .password input').attr('type', 'password')
+		}else{
+			$(this).addClass('active')
+			$('#register .password input').attr('type', 'text')
+		}
+	})
+	$('#register .confirm-password .icon').on('click', function(){
+		if($(this).hasClass('active')){
+			$(this).removeClass('active')
+			$('#register .confirm-password input').attr('type', 'password')
+		}else{
+			$(this).addClass('active')
+			$('#register .confirm-password input').attr('type', 'text')
+		}
+	})
+	$('#register .account-center-agreement-check').on('click', function(){
+		$(this).toggleClass('checked')
+	})
 });

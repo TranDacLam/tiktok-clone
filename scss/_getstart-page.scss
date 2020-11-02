@@ -1020,3 +1020,49 @@ header{
     margin-bottom: 32px;
   }
 }
+
+#register{
+  .password, .confirm-password{
+    .icon{
+      svg:nth-child(2){
+        display: none;
+      }
+      &.active{
+        svg:nth-child(1){
+          display: none;
+        }
+        svg:nth-child(2){
+          display: block;
+        }
+      }
+    }
+  }
+  .account-center-area-select{
+    .menu{
+      width: 360px !important;
+      left: -15px;
+      top: 28px !important;
+      >.input{
+        width: calc(100% - 30px);
+        top: 0px;
+      }
+    }
+    .dropdown{
+      margin-top: 6px;
+      >.menu{
+        padding-top: 70px;
+      }
+      .area-code-value{
+        span{
+          font-size: 14px;
+        }
+        span:nth-child(3){
+          display: none;
+        }
+      }
+      .area-suffix{
+        right: 2px;
+      }
+    }
+  }
+}
