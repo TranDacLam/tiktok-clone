@@ -9481,9 +9481,6 @@ header .ui.pointing.dropdown > .menu {
   .getstart-form .ui.fluid.dropdown.visible, .getstart-form .ui.fluid.dropdown.active {
     z-index: 15; }
 
-.getstart-form .vi-form-item__content {
-  margin-bottom: 32px; }
-
 #register .password .icon svg:nth-child(2), #register .confirm-password .icon svg:nth-child(2) {
   display: none; }
 
@@ -9512,7 +9509,7 @@ header .ui.pointing.dropdown > .menu {
   #register .account-center-area-select .dropdown .area-suffix {
     right: 2px; }
 
-.getstart-form-register .getstart-comp-phone .ui.fluid.dropdown {
+.getstart-form-register .getstart-comp-phone .ui.fluid.dropdown, .getstart-form-leaveinfo .getstart-comp-phone .ui.fluid.dropdown {
   border-radius: 20px 0 0 20px !important; }
 
 /* Extra small devices (phones, 600px and down) */

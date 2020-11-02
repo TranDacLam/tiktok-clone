@@ -1031,9 +1031,6 @@ header{
       z-index: 15;
     }
   }
-  .vi-form-item__content{
-    margin-bottom: 32px;
-  }
 }
 
 #register{
@@ -1082,7 +1079,7 @@ header{
   }
 }
 
-.getstart-form-register{
+.getstart-form-register, .getstart-form-leaveinfo{
   .getstart-comp-phone{
     .ui.fluid.dropdown{
       border-radius: 20px 0 0 20px !important;
