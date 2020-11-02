@@ -9137,6 +9137,72 @@ body > img[width="1"][height="1"] {
   margin-bottom: 10px;
   font-size: 13px; }
 
+@font-face {
+  font-family: "SofiaPro";
+  font-display: swap;
+  src: url(https://sf16-scmcdn-sg.ibytedtos.com/goofy/tiktok_a_getstarted/dist/client/fonts/Sofia_Pro_Regular.e38f51d.woff2); }
+
+@font-face {
+  font-family: "SofiaProBold";
+  font-display: swap;
+  src: url(https://sf16-scmcdn-sg.ibytedtos.com/goofy/tiktok_a_getstarted/dist/client/fonts/Sofia_Pro_Bold.ea8314e.woff2); }
+
+.dec1 {
+  width: 220px;
+  height: 220px;
+  background: linear-gradient(90deg, #db5cff, #ff2c73);
+  opacity: .9;
+  border-radius: 50%;
+  right: -100px;
+  top: 50px; }
+
+.dec2 {
+  right: 0;
+  width: 132px;
+  height: 132px;
+  top: 600px;
+  right: 30px; }
+
+.dec2, .dec3 {
+  background: linear-gradient(90deg, #db5cff, #ff2c73);
+  opacity: .32;
+  border-radius: 50%; }
+
+.dec3 {
+  width: 219px;
+  height: 219px;
+  top: 220px;
+  left: -105px; }
+
+.dec4 {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background: linear-gradient(133deg, rgba(13, 13, 13, 0.4), rgba(55, 55, 55, 0)); }
+
+.dec4:before {
+  width: 50%;
+  height: 50%;
+  background: linear-gradient(133deg, rgba(55, 55, 55, 0.76), rgba(55, 55, 55, 0)); }
+
+.getstart-comp-phone.vi-input .vi-input-group__prepend {
+  border-radius: 20px 0 0 20px; }
+
+.getstart-comp-phone.vi-input .vi-input-group__prepend .vi-select {
+  width: 105px; }
+
+.getstart-comp-phone.vi-input .vi-input-group__prepend .vi-select .vi-input__inner {
+  border-radius: 20px 0 0 20px !important;
+  border: 1px solid #e6eaed;
+  background-color: #f8f9fa; }
+
+.getstart-comp-phone.vi-input .vi-input-group__prepend .vi-select .vi-input:hover .vi-input__inner {
+  border-radius: 20px 0 0 20px !important;
+  border-color: #fe2c55; }
+
+.getstart-comp-phone.vi-input > input {
+  border-radius: 0 20px 20px 0 !important; }
+
 .getstart-form-leaveinfo-submit button {
   font-size: 15px;
   width: 120px;
@@ -9407,8 +9473,13 @@ header .ui.pointing.dropdown > .menu {
       border-color: transparent; }
   .getstart-form .ui.fluid.dropdown .menu {
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15);
-    border-color: transparent;
+    border-color: transparent; }
+  .getstart-form .ui.fluid.dropdown:not(.upward) .menu {
     top: 42px; }
+  .getstart-form .ui.fluid.dropdown.upward .menu {
+    bottom: 42px; }
+  .getstart-form .ui.fluid.dropdown.visible, .getstart-form .ui.fluid.dropdown.active {
+    z-index: 15; }
 
 .getstart-form .vi-form-item__content {
   margin-bottom: 32px; }
@@ -9440,6 +9511,9 @@ header .ui.pointing.dropdown > .menu {
     display: none; }
   #register .account-center-area-select .dropdown .area-suffix {
     right: 2px; }
+
+.getstart-form-register .getstart-comp-phone .ui.fluid.dropdown {
+  border-radius: 20px 0 0 20px !important; }
 
 /* Extra small devices (phones, 600px and down) */
 /* Small devices (portrait tablets and large phones, 600px and up) */

@@ -46,8 +46,41 @@ $(document).ready(function() {
 	$('.form-set-country .dropdown').dropdown({
 		fullTextSearch: true
 	});
+
+	$('.form-set-country .dropdown').dropdown('setting', 'onChange', function(value){
+		console.log(value)
+	});
+
 	$('#register .dropdown').dropdown({
 		fullTextSearch: true
+	});
+
+	$('#register .dropdown').dropdown('setting', 'onChange', function(value){
+		console.log(value)
+	});
+
+	$('.getstart-form-register .dropdown').dropdown({
+		fullTextSearch: true
+	});
+
+	$('.getstart-form-register__country .dropdown').dropdown('setting', 'onChange', function(value){
+		console.log(value)
+	});
+
+	$('.getstart-form-register__timezone .dropdown').dropdown('setting', 'onChange', function(value){
+		console.log(value)
+	});
+
+	$('.getstart-form-register__currency .dropdown').dropdown('setting', 'onChange', function(value){
+		console.log(value)
+	});
+
+	$('.getstart-form-register__phonenumber .dropdown').dropdown('setting', 'onChange', function(value){
+		console.log(value)
+	});
+
+	$('.getstart-form-register__agency .dropdown').dropdown('setting', 'onChange', function(value){
+		console.log(value)
 	});
 
 	$('.form-set-country button').on('click', function() {
@@ -93,4 +126,16 @@ $(document).ready(function() {
 	$('#register .account-center-agreement-check').on('click', function(){
 		$(this).toggleClass('checked')
 	})
+
+	$('.getstart-form-register .form-edit-btn').on('click', function(){
+		$('.getstart-form-register__country .dropdown').removeClass('disabled')
+		$(this).remove()
+	})
+
+
+	// Nếu đang ở form có TikTok Ads Program Terms
+
+	// $('.form-set-country, #register').css({'display': 'none'})
+	// $('.getstart-form').addClass('two-column')
+	// $('.getstart-form-register').css({'display': 'block'})
 });
