@@ -1,12 +1,12 @@
 $(document).ready(function() {
 
-	new WOW().init();
+	// new WOW().init();
+	AOS.init();
 
 	var $header = $("header")
 
 	function onScroll(){
-		$('body').on("scroll", function() {
-			console.log(1111)
+		$(window).on("scroll", function() {
 			if ($(this).scrollTop() >= 1) {
 				$header.removeClass('changing-head changing-head-mask');
 			}
@@ -16,7 +16,7 @@ $(document).ready(function() {
 		});
 
 		if($(window).width() <= 480){
-			$('body').on("scroll", function() {
+			$(window).on("scroll", function() {
 				var scrollCurrent = $(document).height() - ( $(this).scrollTop() + $(window).height())
 				if (scrollCurrent <= 200) {
 					$('.bottomButton_1ccv4').css({'display': 'none'});

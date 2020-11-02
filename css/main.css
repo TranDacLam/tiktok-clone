@@ -15,19 +15,11 @@
   font-family: 'Garamond-Premr-Pro';
   src: url("../fonts/GaramondPremrPro-SmbdSubh.otf") format("truetype"); }
 
-body {
-  font-family: "PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",HelveticaNeue,Helvetica,Arial,sans-serif;
-  padding: 0;
-  margin: 0;
-  background: #003d47;
-  font-weight: normal;
-  color: #edd9c0; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Garamond-Premr-Pro"; }
-
 img {
   max-width: 100%; }
+
+body, html {
+  height: auto !important; }
 
 .white-color {
   color: #FFFFFF; }
