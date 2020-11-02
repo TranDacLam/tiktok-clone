@@ -127,6 +127,18 @@ $(document).ready(function() {
 		$(this).toggleClass('checked')
 	})
 
+	$('.getstart-form .getstart-comp-radio .vi-radio').on('click', function(){
+		if($(this).find('input[type="radio"]').attr('checked')){
+			return
+		}
+		$('.getstart-form .getstart-comp-radio .vi-radio').removeClass('is-checked')
+		$('.getstart-form .getstart-comp-radio .vi-radio__input').removeClass('is-checked')
+		$('.getstart-form .getstart-comp-radio input[type="radio"]').removeAttr('checked')
+		$(this).addClass('is-checked')
+		$(this).find('.vi-radio__input').addClass('is-checked')
+		$(this).find('input[type="radio"]').attr('checked', 'checked')
+	})
+
 	$('.getstart-form-register .form-edit-btn').on('click', function(){
 		$('.getstart-form-register__country .dropdown').removeClass('disabled')
 		$(this).remove()
